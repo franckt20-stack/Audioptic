@@ -395,7 +395,7 @@ const IDFM_TOKEN = 'LR93KggTkThxa7Mmw0xbUytukiGqP9WG';
 const STOPS = {
   // ── T3a ─────────────────────────────────────────────────────────────
   // Stade Charléty, quai direction OUEST (→ Pont du Garigliano, passe par Cité Univ)
-  T3a_CHARLETY_OUEST    : 'STIF:StopPoint:Q:À_VÉRIFIER:',
+  T3a_CHARLETY_OUEST    : 'STIF:StopPoint:Q:24112:',
 
   // Cité Universitaire, quai direction EST (→ Porte de Vincennes) — Retour 2
   T3a_CITE_UNIV_EST     : 'STIF:StopPoint:Q:À_VÉRIFIER:',
@@ -440,36 +440,36 @@ const STOPS = {
 // ── Identifiants de lignes ───────────────────────────────────────────
 // Sources : docs.prim.idfm.fr + referentiel-des-lignes IDFM open data
 const LINES = {
-  T3a  : 'STIF:Line::C01727:',   // ✓ confirmé
-  RERB : 'STIF:Line::C01743:',   // ✓ confirmé
-  T10  : 'STIF:Line::C02317:',   // à vérifier
-  T6   : 'STIF:Line::C01728:',   // à vérifier
-  L13  : 'STIF:Line::C01377:',   // à vérifier
-  L4   : 'STIF:Line::C01371:',   // à vérifier
-  L6   : 'STIF:Line::C01374:',   // à vérifier
-  B395 : 'STIF:Line::À_VÉRIFIER:',
-  B595 : 'STIF:Line::À_VÉRIFIER:',
-  B7805: 'STIF:Line::À_VÉRIFIER:',
+  T3a  : 'STIF:Line::C01391:',
+  RERB : 'STIF:Line::C01743:',
+  T10  : 'STIF:Line::C02528:',
+  T6   : 'STIF:Line::C01794:',
+  L13  : 'STIF:Line::C01383:',
+  L4   : 'STIF:Line::C01374:',
+  L6   : 'STIF:Line::C01376:',
+  B395 : 'STIF:Line::C01320:',
+  B595 : 'STIF:Line::C01369:',
+  B7805: 'STIF:Line::C01543:',
 };
 
 // ── Temps de trajet TC théoriques (minutes, source GTFS IDFM) ────────
 // Modifiables ici si tu constates un écart régulier
 const TRAVEL_TIMES = {
   T3a_Charlety_CiteUniv        :  3,
-  T3a_Charlety_PorteVanves     :  8,
+  T3a_Charlety_PorteVanves     :  12,
   T3a_Charlety_PorteOrleans    :  6,
   T3a_CiteUniv_Charlety        :  3,
-  T3a_PorteVanves_Charlety     :  9,  // est → passe par Porte d'Orléans, Charléty
-  T3a_PorteOrleans_Charlety    :  7,
+  T3a_PorteVanves_Charlety     :  12,  // est → passe par Porte d'Orléans, Charléty
+  T3a_PorteOrleans_Charlety    :  6,
   RERB_CiteUniv_CroixBerny     : 17,
   RERB_CiteUniv_Robinson       : 16,
-  RERB_Denfert_Robinson        : 15,
+  RERB_Denfert_Robinson        : 18,
   RERB_CroixBerny_CiteUniv     : 17,
-  L6_Glaciere_Denfert          :  3,
-  T10_CroixBerny_Noveos        :  9,
-  T10_Noveos_CroixBerny        :  9,
-  T6_Chatillon_PaveBlanc       :  6,
-  T6_PaveBlanc_Chatillon       :  6,
+  L6_Glaciere_Denfert          :  5,
+  T10_CroixBerny_Noveos        :  12,
+  T10_Noveos_CroixBerny        :  12,
+  T6_Chatillon_PaveBlanc       :  19,
+  T6_PaveBlanc_Chatillon       :  19,
   L13_PorteVanves_Chatillon    :  6,
   L13_Chatillon_PorteVanves    :  6,
   L4_PorteOrleans_Barbara      :  4,
